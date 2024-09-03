@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    cursor: url("/public/photo/mus.svg"), auto;
+    font-family: Courier New;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.new{
+    width: 70%;
+}
+.nav{
+    height: 60px;
+    background-color: #dfdfdf;
+    position: static;
+    top: 0;
+    width: 100%;
+}
+.nav > .title{
+    color: #000;
+    font-size: 25px;
+    position: relative;
+    top: 15px;
+    left: 100px;
+}
