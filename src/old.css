@@ -25,3 +25,25 @@ body {
     top: 15px;
     left: 100px;
 }
+.btn{
+    border: none;
+    background-color: #ff8c00;
+    box-shadow: 0 0 4px 0 #9b6018 inset;
+    padding: 10px;
+    font-size: 13pt;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    outline-color: none;
+}
+.btn:hover{
+    box-shadow: 0 0 40px 0 #9b6018 inset;
+}
+.btn:active{
+    box-shadow: 0 0 40px 0 #9b6018 ;
+}
