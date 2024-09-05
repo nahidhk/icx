@@ -25,7 +25,7 @@ body {
     top: 15px;
     left: 100px;
 }
-.btn{
+.btn {
     border: none;
     background-color: #ff8c00;
     box-shadow: 0 0 4px 0 #9b6018 inset;
@@ -46,4 +46,30 @@ body {
 }
 .btn:active{
     box-shadow: 0 0 40px 0 #9b6018 ;
+}
+img{
+    height: 100px;
+
+}
+code{
+    width: auto;
+    margin: 10px;
+    padding: 15px;
+    background-color: #c9c8c8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 10pt;
+
+}
+@media only screen and (max-width: 600px) {
+.new{
+    width: 95%;
+}
+.main{
+    display: block;
+
+}
 }
