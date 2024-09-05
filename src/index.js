@@ -16,7 +16,7 @@ async function displayData() {
             <div>${item.html}</div>
             
             `;
-            
+
             dataContainer.appendChild(itemElement);
         });
     } catch (error) {
@@ -24,3 +24,6 @@ async function displayData() {
     }
 }
 displayData();
+let openNav = `<nav style="" class="nav main"><span class="title new" id="title"></span></nav>`;
+document.write(openNav);
+document.getElementById("title").innerHTML="IC Xpert";

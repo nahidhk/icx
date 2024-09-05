@@ -4,27 +4,32 @@ body {
     cursor: url("/public/photo/mus.svg"), auto;
     font-family: Courier New;
 }
-.main{
+
+.main {
     display: flex;
     justify-content: center;
 }
-.new{
+
+.new {
     width: 70%;
 }
-.nav{
+
+.nav {
     height: 60px;
     background-color: #dfdfdf;
-    position: static;
+    position: absolute;
     top: 0;
     width: 100%;
 }
-.nav > .title{
+
+.nav>.title {
     color: #000;
     font-size: 25px;
     position: relative;
     top: 15px;
     left: 100px;
 }
+
 .btn {
     border: none;
     background-color: #ff8c00;
@@ -32,44 +37,41 @@ body {
     padding: 10px;
     font-size: 13pt;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
     outline: none;
     outline-color: none;
 }
-.btn:hover{
+
+.btn:hover {
     box-shadow: 0 0 40px 0 #9b6018 inset;
 }
-.btn:active{
-    box-shadow: 0 0 40px 0 #9b6018 ;
+
+.btn:active {
+    box-shadow: 0 0 40px 0 #9b6018;
 }
-img{
+
+img {
     height: 100px;
 
 }
-code{
+
+code {
     width: auto;
     margin: 10px;
     padding: 15px;
     background-color: #c9c8c8;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     font-size: 10pt;
-
 }
+
 @media only screen and (max-width: 600px) {
-.new{
-    width: 95%;
-}
-.main{
-    display: block;
+    .new {
+        width: 95%;
+    }
 
-}
+    .main {
+        display: block;
+
+    }
 }
