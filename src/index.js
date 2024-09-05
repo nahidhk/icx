@@ -1,6 +1,6 @@
 async function displayData() {
     try {
-        const response = await fetch("/public/data/data.json");
+        const response = await fetch("/data/data/data.json");
         const data = await response.json();
         const dataContainer = document.getElementById('app');
 
