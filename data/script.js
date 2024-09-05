@@ -64,7 +64,7 @@ function reloadai() {
         location.reload();
     }
 }
-setTimeout(reloadai, 200);
+setTimeout(reloadai, 800);
 
 
 
