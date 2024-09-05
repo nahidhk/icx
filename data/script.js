@@ -66,6 +66,27 @@ function reloadai() {
 }
 setTimeout(reloadai, 800);
 
+// Open (or create) the database
+const request = indexedDB.open("IPX DAta Load", 1);
+
+request.onupgradeneeded = function(event) {
+    const db = event.target.result;
+    
+    // Create an object store with a primary key
+    const objectStore = db.createObjectStore("MyObjectStore", { keyPath: "id" });
+    
+    // Create an index to search by name
+    objectStore.createIndex(ipx, ipx, { unique: false });
+};
+
+request.onsuccess = function(event) {
+    console.log("Database opened successfully");
+};
+
+request.onerror = function(event) {
+    console.error("Error opening database:", event.target.errorCode);
+};
+
 
 
 
