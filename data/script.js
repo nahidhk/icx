@@ -58,4 +58,14 @@ let foter = `     <section style="background-color: #dfdfdf;height: auto;width: 
         </center></blockquote></div></div></section>`
 document.write(foter);
 
+function reloadai() {
+    if (!sessionStorage.getItem('reloaded')) {
+       sessionStorage.setItem('reloaded', 'true');
+        location.reload();
+    }
+}
+setTimeout(reloadai, 200);
+
+
+
 
