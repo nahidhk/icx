@@ -1,74 +1,48 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link rel="stylesheet" href="src/old.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IC Xpert</title>
-</head>
-
-<body><br><br><br><br><br>
-    <section class="main">
-        <div class="new">
-            <div id="app"></div>
-        </div>
-    </section>
-    <script src="src/index.js"></script>
-    <script src="data/script.js"></script>
-</body>
-
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Push</title>
+    <style>
+        div {
+            background-color: #dfdfdf;
+            color: #000;
+            height: auto;
+            padding: 20px;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+
+        #title, #about {
+            height: 50px;
+            width: 300px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        #code {
+            width: 300px;
+        }
+
+        input[type=submit] {
+            margin: 10px;
+        }
+    </style>
 </head>
-<style>
-    div {
-
-        background-color: #dfdfdf;
-        color: #000;
-        height: auto;
-        padding: 20px;
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 10px;
-
-    }
-
-    #title,
-    #about {
-        height: 50px;
-        width: 300px;
-        text-align: center;
-        font-size: 16px;
-    }
-
-    #code {
-        width: 300px;
-    }
-
-    input type[submit] {
-        margin: 10px;
-    }
-</style>
-
 <body>
     <div>
-        <lable for="">Title</lable><br>
+        <label for="title">Title</label><br>
         <input type="text" id="title">
         <br>
-        <lable for="">About </lable><br>
+        <label for="about">About</label><br>
         <input type="text" id="about">
         <br>
-        <lable for=""> Code </lable><br>
-        <textarea rows="10" type="text" id="code"></textarea>
+        <label for="code">Code</label><br>
+        <textarea rows="10" id="code"></textarea>
         <br>
         <button onclick="push()">Push</button>
     </div>
@@ -77,20 +51,28 @@
             var title = document.getElementById("title").value;
             var about = document.getElementById("about").value;
             var code = document.getElementById("code").value;
-    
-            const response = await fetch('/api/pushToGit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ title, about, code }),
-            });
-    
-            const result = await response.json();
-            console.log(result);
+
+            try {
+                const response = await fetch('/api/pushToGit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ title, about, code }),
+                });
+
+                const contentType = response.headers.get('Content-Type');
+                if (contentType && contentType.includes('application/json')) {
+                    const result = await response.json();
+                    console.log(result);
+                } else {
+                    const text = await response.text();
+                    console.error("Unexpected response format:", text);
+                }
+            } catch (error) {
+                console.error("Error:", error);
+            }
         }
     </script>
-    
 </body>
-
 </html>
