@@ -12,9 +12,8 @@ async function displayData() {
         data.forEach(item => {
             const itemElement = document.createElement('div');
             itemElement.innerHTML = `
-            <div style="background-color: #fff;color: #000;border: 1px solid #000;border-radius: 9px;margin: 10px;padding: 13px;"><h1>${item.title}</h1><p>${item.about}</p>
+            <div style="background-color: #fff;color: #000;border: 1px solid #000;border-radius: 9px;margin: 10px;padding: 13px;">
             <div>${item.html}</div>
-            
             `;
 
             dataContainer.appendChild(itemElement);

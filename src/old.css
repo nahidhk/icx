@@ -64,7 +64,6 @@ code {
     border-radius: 10px;
     font-size: 10pt;
 }
-
 @media only screen and (max-width: 600px) {
     .new {
         width: 95%;

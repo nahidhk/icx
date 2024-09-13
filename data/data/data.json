@@ -1,32 +1,6 @@
 [
-  {
-    "title": "noinput",
-    "about": "@",
-    "html": "@"
-  },
-  {
-    "title": "Uuuu",
-    "about": "Hhhh",
-    "code": "Hhhhh"
-  },
-  {
-    "title": "Uuuu",
-    "about": "Hhhh",
-    "code": "Hhhhh"
-  },
-  {
-    "title": "Uuuu",
-    "about": "Hhhh",
-    "code": "Hhhhh"
-  },
-  {
-    "title": "Uuuu",
-    "about": "Hhhh",
-    "code": "Hhhhh"
-  },
-  {
-    "title": "Uuuu",
-    "about": "Hhhh",
-    "code": "Hhhhh"
-  }
+    {
+        "html":"@"
+    }
+    
 ]
