@@ -1,6 +1,1 @@
-[
-    {
-        "html":"@"
-    }
-    
-]
+[{"html":"<h1>Digital Weighing Machine Repair Display !</h1><p>Matching IC of main machine and display.</p><div class='code'><center><img src='/img/sd5209.jpg' alt='post nahidhk' /><h2>IC: SD5209X1</h2><table><tr><th>Ic Pin No</th><th>Ic Pin type</th></tr><tr><td>3</td><td>Serial Clock signal (SCL)</td></tr><tr><td>4</td><td>Serial Data Acquisition (SDA)</td></tr><tr><td>not output ic</td><td>Voltage Common Collector (VCC)</td></tr><tr><td>not output ic</td><td>Ground (GND)</td></tr></table><br /><hr /><b>Dispaly Ic</b><img src='/img/gn1640.jpg' alt='Post nahidhk' /><h2>IC: Gn1640</h2><table><tr><th>Ic Pin No</th><th>Ic Pin type</th></tr><tr><td>7</td><td>Serial Clock signal (SCL)</td></tr><tr><td>8</td><td>Serial Data Acquisition (SDA)</td></tr><tr><td>26</td><td>Voltage Common Collector (VCC)</td></tr><tr><td>6</td><td>Ground (GND)</td></tr></table></center></div><center><h2>Poblem Solved to Run This Command!</h2><hr /><h3><li>Follow The tabel and join Cabel!</li></h3><table><tr><th>Ic Pin No</th><th>Ic Pin type</th></tr><tr><td>7 + 3</td><td>(SCL) + SCL</td></tr><tr><td>8 + 4</td><td>(SDA) + SDA</td></tr><tr><td>26 + Add The 3.76V Dc Line (+)</td><td>(VCC) + Dc 3.76V(+)</td></tr><tr><td>6 + add The Body Ground Line (-)</td><td>(GND) = (-)</td></tr></table><h3><li>Factory Reconstruction and New Calculation System Follow this command!</li></h3><code>Follow the main PCB border and see the Bajr Side 2 Pin Open Hold 2 Pin and Auto Re-launch. And Power On.</code></center><br><br>"}]

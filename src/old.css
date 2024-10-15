@@ -56,7 +56,7 @@ img {
 
 }
 
-code {
+code , .code{
     width: auto;
     margin: 10px;
     padding: 15px;
@@ -64,6 +64,19 @@ code {
     border-radius: 10px;
     font-size: 10pt;
 }
+table, td, th {  
+    border: 1px solid #000000;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
 @media only screen and (max-width: 600px) {
     .new {
         width: 95%;
@@ -73,4 +86,8 @@ code {
         display: block;
 
     }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
 }
