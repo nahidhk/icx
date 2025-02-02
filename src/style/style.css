@@ -1,0 +1,33 @@
+body{
+  font-family: monospace;
+margin:0;  
+background-color: #fff;
+background-image: linear-gradient(180deg, #FF007F , #fff);
+background-repeat: no-repeat;
+}
+h1,h2,h3,h4,h5,p{
+  margin: 0;
+}
+.nav{
+  position: fixed;
+  background-color: #ff007f;
+  height: 60px;
+  width: 100%;
+  z-index: 100;
+  color: #fff;
+}
+.flex{
+  display: flex;
+}
+.anaround{
+  justify-content: space-around;
+}
+.blockqut{
+  margin-top: 20px;
+}
+.btn{
+ background-color: #ff007f;
+ color: #fff;
+ cursor: pointer;
+ 
+}
