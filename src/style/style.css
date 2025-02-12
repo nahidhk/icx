@@ -29,5 +29,6 @@ h1,h2,h3,h4,h5,p{
  background-color: #ff007f;
  color: #fff;
  cursor: pointer;
- 
+ border: 1px dotted #4680ff;
+ padding: 10px;
 }
