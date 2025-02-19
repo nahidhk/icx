@@ -1,14 +1,24 @@
-body{
+body {
   font-family: monospace;
-margin:0;  
-background-color: #fff;
-background-image: linear-gradient(180deg, #FF007F , #fff);
-background-repeat: no-repeat;
+  margin: 0;
+  background-color: #fff;
+  background-image: linear-gradient(180deg, #FF007F, #fff);
+  background-repeat: no-repeat;
 }
-h1,h2,h3,h4,h5,p{
+button{
+  font-family: monospace;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0;
 }
-.nav{
+
+.nav {
   position: fixed;
   background-color: #ff007f;
   height: 60px;
@@ -16,23 +26,36 @@ h1,h2,h3,h4,h5,p{
   z-index: 100;
   color: #fff;
 }
-.flex{
+
+.flex {
   display: flex;
 }
-.anaround{
+
+.anaround {
   justify-content: space-around;
 }
-.blockqut{
-  margin-top: 20px;
+
+.blockqut {
+  margin-top: 10px;
 }
-.btn{
- background-color: #ff007f;
- color: #fff;
- cursor: pointer;
- border: 1px dotted #4680ff;
- padding: 10px;
+
+.btn {
+  background-color: #ff007f;
+  color: #fff;
+  cursor: pointer;
+  border: 1px dotted #4680ff;
+  padding: 10px;
+  background-color: #4680ff;
 }
-.border:hover{
-  border: 2px dotted #4680ff;
+
+.border:hover {
+  border: 2px dotted #fff;
 }
-.border
+
+.h3 {
+  font-size: 1.6rem;
+}
+
+.border {
+  border-radius: 1000px;
+}
