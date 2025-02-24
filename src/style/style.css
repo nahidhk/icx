@@ -38,7 +38,6 @@ p {
 .blockqut {
   margin-top: 10px;
 }
-
 .btn {
   background-color: #ff007f;
   color: #fff;
@@ -47,15 +46,15 @@ p {
   padding: 10px;
   background-color: #4680ff;
 }
-
 .border:hover {
   border: 2px dotted #fff;
 }
-
 .h3 {
   font-size: 1.6rem;
 }
-
 .border {
   border-radius: 1000px;
+}
+.logo{
+  height: 40px;
 }
