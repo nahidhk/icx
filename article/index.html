@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICX WiKi</title>
     
-    <!-- Marked.js লোড -->
+  
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     
     <style>
-        /* Markdown কনটেন্টের স্টাইল */
+       
         #content {
             max-width: 800px;
             margin: 20px auto;
@@ -60,7 +60,7 @@
                 return response.text();
             })
             .then(markdown => {
-                // Markdown থেকে HTML কনভার্ট করে দেখানো
+               
                 document.getElementById('content').innerHTML = marked.parse(markdown);
             })
             .catch(error => {
