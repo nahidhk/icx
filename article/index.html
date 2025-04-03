@@ -10,7 +10,12 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     
     <style>
-       
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
         #content {
             max-width: 800px;
             margin: 20px auto;
@@ -32,6 +37,17 @@
         code {
             font-family: monospace;
         }
+        .bottom{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background-color: #ff46a6;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+        }
     </style>
 </head>
 <body>
@@ -42,34 +58,13 @@
    </div>
 <br><br><br><br>
  <div id="content">Loading...</div>
-
-   <script>
-    function getFilenameFromUrl() {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get('file'); 
-    }
-
-    const filename = getFilenameFromUrl();
-    
-    if (filename) {
-        fetch('/article/' + filename)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('File not found');
-                }
-                return response.text();
-            })
-            .then(markdown => {
-               
-                document.getElementById('content').innerHTML = marked.parse(markdown);
-            })
-            .catch(error => {
-                console.error('Error loading Markdown file:', error);
-                document.getElementById('content').innerHTML = "<p style='color: red;'>Error loading file.</p>";
-            });
-    } else {
-        document.getElementById('content').innerHTML = "<p style='color: red;'>No file specified in URL.</p>";
-    }
+<div class="bottom">
+    <button class="btn border" onclick="opencomment()">
+        Comment Your Article and Get Help !
+    </button>
+</div>
+   <script src="/src/javascript/icx.js"></script>
+   
    </script>
 </body>
 </html>
