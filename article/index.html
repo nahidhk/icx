@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/src/style/style.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICX WiKi</title>
+    
+    <!-- Marked.js লোড -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <style>
+        /* Markdown কনটেন্টের স্টাইল */
+        #content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background: #272822;
+            color: #00ff1a;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+   <div class="flex nav anaround">
+       <div class="blockqut">
+           <h1>ICX WiKi</h1>
+       </div>
+   </div>
+<br><br><br><br><br><br><br><br><br>
+ <div id="content">Loading...</div>
+
+   <script>
+    function getFilenameFromUrl() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('file'); 
+    }
+
+    const filename = getFilenameFromUrl();
+    
+    if (filename) {
+        fetch('/article/' + filename)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('File not found');
+                }
+                return response.text();
+            })
+            .then(markdown => {
+                // Markdown থেকে HTML কনভার্ট করে দেখানো
+                document.getElementById('content').innerHTML = marked.parse(markdown);
+            })
+            .catch(error => {
+                console.error('Error loading Markdown file:', error);
+                document.getElementById('content').innerHTML = "<p style='color: red;'>Error loading file.</p>";
+            });
+    } else {
+        document.getElementById('content').innerHTML = "<p style='color: red;'>No file specified in URL.</p>";
+    }
+   </script>
+</body>
+</html>

@@ -58,3 +58,21 @@ p {
 .logo{
   height: 40px;
 }
+.frem{
+  margin: 4px;
+  font-size: 1rem;
+  border: 1px solid #4680ff;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #4680ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#filein{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style-type: square;
+}
