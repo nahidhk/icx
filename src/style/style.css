@@ -76,7 +76,7 @@ p {
 ul {
   list-style-type: square;
 }
-.fixed{
+.index{
   position: fixed;
   top: 0;
   left: 0;
