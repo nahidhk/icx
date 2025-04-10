@@ -65,3 +65,14 @@ img{
   height: 100%;
   width: 100%;
 }
+.select{
+  height: 40px;
+  width: 90%;
+  text-align: center;
+  background-color: #FFFFFF00;
+  color: #FFFFFF;
+  outline: none;
+  border: 1px dashed #fff;
+  border-radius: 10px;
+  font-family: monospace;
+}
