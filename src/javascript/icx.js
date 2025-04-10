@@ -22,13 +22,23 @@ if (filename) {
             document.getElementById('content').innerHTML = "<p style='color: red;'>Error loading file.</p>";
         });
 } else {
-    document.getElementById('content').innerHTML = "<p style='color: red;'>No file specified in URL.</p>";
+  var mytok = confirm(" ! GO BACK TO CLICK 'ok' 🚫");
+  if (mytok === true) {
+    window.history.back();
+  }
+    document.getElementById('content').innerHTML = "<p style='color: red;'>No file specified in URL 🫥.</p>";
 }
-function opencomment(){
+
+function opencomment() {
+  var filename = window.location.href;
     let comment = prompt("Please enter your comment:");
     if (comment) {
-        window.location.href = `mailto:icx.sms@gmail.com?subject=Comment on ${filename}?body=${comment}\n\n  ${filename}.\n\n`;
+        const subject = `Comment on ${filename}`;
+        const body = `${comment}\n\n${filename}.`;
+        const mailtoLink = `mailto:icx.sms@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
     } else {
         alert("Please enter a comment.");
     }
 }
+

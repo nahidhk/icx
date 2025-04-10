@@ -3,7 +3,12 @@ console.log("Hello, world!");
 
 
 function callTheopt() {
-  alert("asiya ")
+  const tip = confirm("Send Mail your article!");
+  if (tip === true) {
+    window.location.href="mailto:icx.sms@gmail.com"
+  } else {
+    alert('Okay No Problem 🥰');
+  }
 }
 
 
