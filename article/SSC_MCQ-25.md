@@ -15,21 +15,176 @@
   <option value="technical">Technical</option>
 </select>
 <h1>SSC MCQ</h1>
-<p>বাংলা প্রথম পত্র ও সহজ বাংলা</p>
+<p>পরবর্তী উত্তরমালার</p>
 <p>প্রকাশ করা হবে</p>
-<p>10-04-2025 02:00:00 PM</p>
+<p>আগামি পরীক্ষা  02:00:00 PM</p>
 </div>
----
 
+
+<!---->
+
+
+<div class='vcc' id="rajshahi">
 
 ## রাজশাহী বোর্ড ।
-
-
-<div id="raj-ban1">
+---
+### বাংলা ১ম পত্র 
 <img src="raj-ban1-s1.jpg" />
 <img src="raj-ban1-s2.jpg">
+ 
+---
+---
+</div>
+
+<!---->
+
+<div class='vcc' id="dhaka">
+
+## ঢাকা বোর্ড ।
+---
+### বাংলা ১ম পত্র 
+
+Loadding...
+ 
+
+---
+---
+</div>
+
+<!---->
+
+
+<div class='vcc' id="barisal">
+
+## বরিশাল বোর্ড ।
+---
+### বাংলা ১ম পত্র 
+
+
+Loadding...
+
+ 
+---
+---
+</div>
+
+<!---->
+
+<div class='vcc' id="chittagong">
+
+## চট্রগ্রাম বোর্ড ।
+---
+### বাংলা ১ম পত্র 
+
+Loadding...
+ 
+---
+---
+</div>
+
+<!---->
+
+<!---->
+
+<div class='vcc' id="comilla">
+
+## কুমিল্লা বোর্ড ।
+---
+### বাংলা ১ম পত্র 
+
+Loadding...
+ 
+---
+---
+</div>
+
+
+<!---->
+
+<div class='vcc' id="dinajpur">
+
+## দিনাজপুর বোর্ড ।
+---
+### বাংলা ১ম পত্র 
+
+Loadding...
+ 
+---
+---
+</div>
+
+
+<!---->
+
+<div class='vcc' id="jessore">
+
+## যশোর বোর্ড ।
+---
+### বাংলা ১ম পত্র 
+
+Loadding...
+ 
+---
+---
+</div>
+
+
+<!---->
+
+<div class='vcc' id="mymensingh">
+
+## ময়মনসিংহ বোর্ড ।
+---
+### বাংলা ১ম পত্র 
+
+Loadding...
+ 
+---
+---
+</div>
+
+<!---->
+
+<div class='vcc' id="sylhet">
+
+## SYLHET বোর্ড ।
+---
+### বাংলা ১ম পত্র 
+
+Loadding...
+ 
+---
+---
+</div>
+
+<!---->
+
+<div class='vcc' id="technical">
+
+## TECHNICAL বোর্ড ।
+---
+### বাংলা ১ম পত্র 
+
+Loadding...
+ 
+---
+---
+</div>
+
+<!---->
+
+<div class='vcc' id="madrasah">
+
+## Madrasah বোর্ড ।
+---
+### বাংলা ১ম পত্র 
+
+Loadding...
+ 
+---
+---
 </div>
 
 
 
----
+

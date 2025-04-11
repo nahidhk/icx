@@ -43,6 +43,9 @@ function opencomment() {
 }
 
 function callBord(board) {
-  console.log("Selected board:", board);
-  // Add your logic here
+ const element = document.getElementById(board);
+if (element) {
+    element.style.display = 'block';
+    window.location.href = `#${board}`;
+}
 }
