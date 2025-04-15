@@ -15,9 +15,9 @@
   <option value="technical">Technical</option>
 </select>
 <h1>SSC MCQ</h1>
-<p>পরবর্তী উত্তরমালার</p>
+<p>ইংলিশ ১ম পত্র উত্তরমালার</p>
 <p>প্রকাশ করা হবে</p>
-<p>আগামি পরীক্ষা  02:00:00 PM</p>
+<p> 15.04.2025 02:00:00 PM</p>
 </div>
 
 
