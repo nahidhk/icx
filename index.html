@@ -13,28 +13,32 @@
   <h1>Welcome to My Mini App!</h1>
   <p id="username"></p>
   <button onclick="sendData()">Send Data to Bot</button>
+  <button onclick="showAd()">Show Ad</button>
 
   <script>
     let tg = window.Telegram.WebApp;
     tg.expand();
 
     document.getElementById('username').innerText =
-      "Hello, " + tg.initDataUnsafe?.user?.first_name;
+      "Hello, " + (tg.initDataUnsafe?.user?.first_name || "Guest");
 
     function sendData() {
       tg.sendData("User clicked the button!");
     }
   </script>
-  <script>
-    
-window.showGiga()
-  .then(() => {
-    // Your reward logic here
-  })
-  .catch(e => {
-    // Handle errors here
-  });
-  </script>
+
+  <!-- GigaPub Script -->
   <script src="https://ad.gigapub.tech/script?id=1541"></script>
+  <script>
+    function showAd() {
+      window.showGiga()
+        .then(() => {
+          alert("Ad দেখা শেষ! পুরস্কার দিন।");
+        })
+        .catch(e => {
+          console.error("Ad লোড হয়নি:", e);
+        });
+    }
+  </script>
 </body>
 </html>
