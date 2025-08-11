@@ -2,19 +2,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My Mini App</title>
+  <title>ICX Mini App</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <style>
-    body { background: #f5f5f5; font-family: sans-serif; text-align: center; }
+    body { background: #f5f5f5; font-family: sans-serif; text-align: center; padding: 20px; }
     button { padding: 10px 20px; margin-top: 20px; font-size: 18px; }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Mini App!</h1>
-  <p id="username"></p>
-  <button onclick="sendData()">Send Data to Bot</button>
+  <h1>Welcome to ICX Mini App!</h1>
+  <p id="username">Loading...</p>
   <button onclick="showAd()">Show Ad</button>
 
+  <!-- তোমার আসল GigaPub ID -->
+  <script src="https://ad.gigapub.tech/script?id=1545"></script>
+  
   <script>
     let tg = window.Telegram.WebApp;
     tg.expand();
@@ -22,22 +24,18 @@
     document.getElementById('username').innerText =
       "Hello, " + (tg.initDataUnsafe?.user?.first_name || "Guest");
 
-    function sendData() {
-      tg.sendData("User clicked the button!");
-    }
-  </script>
-
-  <!-- GigaPub Script -->
-  <script src="https://ad.gigapub.tech/script?id=1541"></script>
-  <script>
     function showAd() {
-      window.showGiga()
-        .then(() => {
-          alert("Ad দেখা শেষ! পুরস্কার দিন।");
-        })
-        .catch(e => {
-          console.error("Ad লোড হয়নি:", e);
-        });
+      if (typeof window.showGiga === "function") {
+        window.showGiga()
+          .then(() => {
+            alert("Ad দেখা শেষ!");
+          })
+          .catch(e => {
+            console.error("Ad লোড হয়নি:", e);
+          });
+      } else {
+        alert("Ad script লোড হয়নি!");
+      }
     }
   </script>
 </body>
