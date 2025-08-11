@@ -1,1 +1,29 @@
-Working error 🥺 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Mini App</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body { background: #f5f5f5; font-family: sans-serif; text-align: center; }
+    button { padding: 10px 20px; margin-top: 20px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Mini App!</h1>
+  <p id="username"></p>
+  <button onclick="sendData()">Send Data to Bot</button>
+
+  <script>
+    let tg = window.Telegram.WebApp;
+    tg.expand();
+
+    document.getElementById('username').innerText =
+      "Hello, " + tg.initDataUnsafe?.user?.first_name;
+
+    function sendData() {
+      tg.sendData("User clicked the button!");
+    }
+  </script>
+</body>
+</html>
