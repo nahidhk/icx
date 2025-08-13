@@ -10,33 +10,8 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to ICX Mini App!</h1>
-  <p id="username">Loading...</p>
-  <button onclick="showAd()">Show Ad</button>
-
-  <!-- তোমার আসল GigaPub ID -->
-  <script src="https://ad.gigapub.tech/script?id=1545"></script>
-  
-  <script>
-    let tg = window.Telegram.WebApp;
-    tg.expand();
-
-    document.getElementById('username').innerText =
-      "Hello, " + (tg.initDataUnsafe?.user?.first_name || "Guest");
-
-    function showAd() {
-      if (typeof window.showGiga === "function") {
-        window.showGiga()
-          .then(() => {
-            alert("Ad দেখা শেষ!");
-          })
-          .catch(e => {
-            console.error("Ad লোড হয়নি:", e);
-          });
-      } else {
-        alert("Ad script লোড হয়নি!");
-      }
-    }
-  </script>
+  <h1>
+    This is a Telegram Bot!
+  </h1>
 </body>
 </html>
